@@ -1,6 +1,7 @@
 
 #board-area{
-	max-width: 1000px;
+	max-width: 1800px;
+	margin: 0 auto;
 }
 #info-board{
 	padding: 5px;
@@ -30,7 +31,7 @@
 	width: 100%;
 	border: 1px solid #7F6346;
 	min-width: 500px;
-	table-layout:fixed; 
+	table-layout:fixed;
 }
 .square{
 	width: 6.25%;

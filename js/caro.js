@@ -17,6 +17,7 @@ function game(noOfRow, noOfCol) {
             this.sq[i][j] = 0;
         }
     }
+    this.sq[~~(this.noOfRow / 2)][~~(this.noOfCol / 2)] = O 
     this.xMove = function (i, j) {
         currGame.sq[i][j] = X;
         board.sqUpdate(i, j);
