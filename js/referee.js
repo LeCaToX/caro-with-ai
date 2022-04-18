@@ -82,8 +82,10 @@ var referee = {
         var result = referee.isWin();
         if (result == 1) {
             //check from current currGame.sq: has  the current player won?
+            alert("X thắng")
             currGame.isGamming = false;
         } else if (result == 2) {
+            alert("O thắng")
             currGame.isGamming = false;
         } else if (result == 3) {
             //check draw

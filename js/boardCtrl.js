@@ -1,11 +1,13 @@
 var ctrl = {
     newGame: function () {
-        currGame = new game(30, 30);
+        var size = prompt("Chọn kích thước mới", 19) | 0
+        size = Math.min(size, 50)
+        size = Math.max(size, 15)
+        currGame = new game(size, size)
         board.writeBoard();
     },
     resign: function () {
-        alert("Bạn đã chịu thua. :D :D");
-        currGame = new game(30, 30);
-        board.writeBoard();
+        alert("Gà")
+        this.newGame()
     },
 };

@@ -1,8 +1,8 @@
 const X = 1,
-    O = 2,
-    Empty = 0;
+      O = 2,
+      Empty = 0;
 
-var currGame = new game(30, 30);
+var currGame = new game(19, 19);
 board.writeBoard();
 
 function game(noOfRow, noOfCol) {
