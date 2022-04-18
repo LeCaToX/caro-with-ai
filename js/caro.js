@@ -2,7 +2,7 @@ const X = 1,
     O = 2,
     Empty = 0;
 
-var currGame = new game(14, 20);
+var currGame = new game(30, 30);
 board.writeBoard();
 
 function game(noOfRow, noOfCol) {
