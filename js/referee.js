@@ -6,7 +6,7 @@ var referee = {
         // horizontally eval (col +-)
         var valStr = ""; //1:X, 2: O, 0: Empty or Out of Board, 3: concat two line
         for (var i = 0; i < currGame.noOfRow; i++) {
-            valStr += "0" + currGame.sq[i].join("") + "03";
+            valStr += "0" + currGame.sq[i].join("") + "0";
         }
         // vertically eval (row +-)
         //1:X, 2: O, 0: Empty or Out of Board, 3: concat two line
@@ -15,7 +15,7 @@ var referee = {
             for (var i = 0; i < currGame.noOfRow; i++) {
                 valStr += currGame.sq[i][j];
             }
-            valStr += "03";
+            valStr += "0";
         }
         // dia from top
         //1:X, 2: O, 0: Empty or Out of Board, 3: concat two line
@@ -28,7 +28,7 @@ var referee = {
                 i++;
                 j++;
             }
-            valStr += "03";
+            valStr += "0";
         }
         for (var k = 0; k < currGame.noOfCol; k++) {
             valStr += "0";
@@ -39,7 +39,7 @@ var referee = {
                 i++;
                 j--;
             }
-            valStr += "03";
+            valStr += "0";
         }
         // dia from bottom
         for (var k = 0; k < currGame.noOfCol; k++) {
@@ -51,7 +51,7 @@ var referee = {
                 i--;
                 j--;
             }
-            valStr += "03";
+            valStr += "0";
         }
         for (var k = 0; k < currGame.noOfCol; k++) {
             valStr += "0";
@@ -62,7 +62,7 @@ var referee = {
                 i--;
                 j++;
             }
-            valStr += "03";
+            valStr += "0";
         }
 
         if (
